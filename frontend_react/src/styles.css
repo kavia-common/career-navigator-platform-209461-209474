@@ -1,0 +1,7 @@
+:root{
+  --primary:#3b82f6;
+  --secondary:#64748b;
+  --success:#06b6d4;
+}
+html, body, #root { height:100%; }
+a { text-decoration: none; color: inherit; }
