@@ -5,7 +5,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    open: false
+    open: false,
+    host: true,
+    allowedHosts: ['vscode-internal-14214-beta.beta01.cloud.kavia.ai']
   },
   preview: {
     port: 3000
