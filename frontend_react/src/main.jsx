@@ -6,8 +6,11 @@ import Home from './pages/Home';
 import Analysis from './pages/Analysis';
 import Roadmap from './pages/Roadmap';
 import Progress from './pages/Progress';
+import HealthCheck from './pages/HealthCheck';
 import './styles.css';
 
+// PUBLIC_INTERFACE
+// Entrypoint that wires routes and renders the application.
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,7 +19,8 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'analysis', element: <Analysis /> },
       { path: 'roadmap', element: <Roadmap /> },
-      { path: 'progress', element: <Progress /> }
+      { path: 'progress', element: <Progress /> },
+      { path: 'health-check', element: <HealthCheck /> }
     ]
   }
 ]);
